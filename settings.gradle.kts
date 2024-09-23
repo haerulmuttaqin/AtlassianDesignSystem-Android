@@ -12,7 +12,8 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-
-rootProject.name = "Atlassian Design System Android"
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+rootProject.name = "Atlassian-Design-System-Android"
 include(":app")
- 
+include(":designsystem")
+include(":cache")

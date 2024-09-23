@@ -1,4 +1,4 @@
-package id.hae.adsandroid
+package id.hae.catalog
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

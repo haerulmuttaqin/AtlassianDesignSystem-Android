@@ -1,4 +1,4 @@
-package id.hae.adsandroid
+package id.hae.atlassian_designsystem
 
 import org.junit.Test
 
