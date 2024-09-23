@@ -359,13 +359,9 @@ public fun ProvideColors(colors: Colors, content: @Composable () -> Unit) {
     )
 }
 
-private fun getColors(): ProvidableCompositionLocal<Colors> {
-    return compositionLocalOf { lightColors() }
-}
-
 /**
  * Local Orbit Colors.
  *
  * Access the colors through [kiwi.orbit.compose.ui.OrbitTheme.colors].
  */
-internal val LocalColors: ProvidableCompositionLocal<Colors> = getColors()
+internal val LocalColors: ProvidableCompositionLocal<Colors> = compositionLocalOf { lightColors() }

@@ -71,4 +71,14 @@ private fun BundleColors.contentColorFor(color: Color): Color? =
         else -> null
     }
 
+@ReadOnlyComposable
+@Composable
+public fun contentColorFor(backgroundColor: Color): Color =
+    AtlasKitTheme.colors.contentColorFor(backgroundColor).takeOrElse { LocalContentColor.current }
+
+@ReadOnlyComposable
+@Composable
+public fun contentColorFor(backgroundColor: Brush): Color =
+    AtlasKitTheme.colors.contentColorFor(backgroundColor).takeOrElse { LocalContentColor.current }
+
 public val LocalContentColor: ProvidableCompositionLocal<Color> = LocalContentColor
