@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "id.haerulmuttaqin.adsandroid"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "id.haerulmuttaqin.adsandroid"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 

@@ -1,4 +1,4 @@
-package id.haerulmuttaqin.adsandroid
+package id.hae.adsandroid
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

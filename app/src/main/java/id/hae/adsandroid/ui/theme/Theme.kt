@@ -1,4 +1,4 @@
-package id.haerulmuttaqin.adsandroid.ui.theme
+package id.hae.adsandroid.ui.theme
 
 import android.app.Activity
 import android.os.Build

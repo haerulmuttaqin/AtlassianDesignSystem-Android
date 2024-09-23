@@ -1,4 +1,4 @@
-package id.haerulmuttaqin.adsandroid
+package id.hae.adsandroid
 
 import org.junit.Test
 
