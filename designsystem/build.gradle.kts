@@ -2,9 +2,14 @@
 plugins {
     alias(libs.plugins.com.android.library)
     alias(libs.plugins.org.jetbrains.kotlin.android)
+    alias(libs.plugins.org.jetbrains.dokka)
 }
 
 android {
+//    dokka {
+//        outputFormat = 'html'
+//        outputDirectory = "$buildDir/javadoc"
+//    }
     namespace = "id.hae.atlassian_designsystem"
     compileSdk = 33
 

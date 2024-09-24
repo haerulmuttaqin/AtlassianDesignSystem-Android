@@ -11,6 +11,7 @@ datastore-preferences = "1.1.1"
 compose-bom = "2024.09.01"
 appcompat = "1.7.0"
 material = "1.12.0"
+dokka = "1.9.20"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -30,10 +31,14 @@ ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 material3 = { group = "androidx.compose.material3", name = "material3" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+kotlin-dokka = { module = "org.jetbrains.dokka:dokka-base", version.ref = "dokka" }
+kotlin-dokka-gradle = { module = "org.jetbrains.dokka:dokka-gradle-plugin", version.ref = "dokka" }
+
 [plugins]
 com-android-application = { id = "com.android.application", version.ref = "agp" }
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
 com-android-library = { id = "com.android.library", version.ref = "agp" }
+org-jetbrains-dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
 
 [bundles]
 
