@@ -1,7 +1,6 @@
 package id.hae.catalog
 
 import android.app.UiModeManager
-import android.content.Context
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
@@ -15,13 +14,11 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -33,19 +30,17 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.graphicsLayer
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.core.content.getSystemService
 import id.hae.atlassian_designsystem.AtlasKitTheme
-import id.hae.catalog.ui.AppTheme
+import id.hae.atlassian_designsystem.CoreTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            val context = LocalContext.current
             var darkTheme by rememberSaveable { mutableStateOf<Boolean?>(null) }
             val isDarkTheme = darkTheme ?: isSystemInDarkTheme()
             val iconId =
@@ -54,40 +49,48 @@ class MainActivity : ComponentActivity() {
                 targetValue = if (isDarkTheme) 180f else 0f,
                 label = "rotationAngle"
             )
-            LaunchedEffect(key1 = true, block = {
+            LaunchedEffect(key1 = darkTheme, block = {
                 println("dark = $darkTheme")
             })
-            AppTheme(
+            AtlasKitTheme(
                 darkTheme = isDarkTheme,
                 onThemeToggle = { isDarkThemeToggle ->
                     darkTheme = !isDarkThemeToggle
                     this.setUiMode(isDarkThemeToggle)
                 },
             ) {
-                Scaffold {
-                    Column(
-                        modifier = Modifier.padding(it)
-                    ) {
-                        Box(
+                MainScreen(darkTheme, iconId, rotationAngle)
+            }
+        }
+    }
+
+    @Composable
+    private fun MainScreen(darkTheme: Boolean?, iconId: Int, rotationAngle: Float) {
+        var darkTheme1 = darkTheme
+        Scaffold {
+            Column(
+                modifier = Modifier.padding(it)
+            ) {
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .background(color = AtlasKitTheme.colors.surface.main),
+                    contentAlignment = Alignment.Center
+                ) {
+                    IconButton(onClick = {
+                        darkTheme1 = if (darkTheme1 == null) false else !darkTheme1!!
+                    }) {
+                        Icon(
+                            painter = painterResource(id = iconId),
+                            contentDescription = null,
+                            tint = AtlasKitTheme.colors.content.normal,
                             modifier = Modifier
-                                .fillMaxWidth()
-                                .background(color = AtlasKitTheme.colors.surface.main),
-                            contentAlignment = Alignment.Center
-                        ) {
-                            IconButton(onClick = { darkTheme = darkTheme?.not() }) {
-                                Icon(
-                                    painter = painterResource(id = iconId),
-                                    contentDescription = null,
-                                    tint = AtlasKitTheme.colors.content.normal,
-                                    modifier = Modifier
-                                        .size(100.dp)
-                                        .graphicsLayer(rotationZ = rotationAngle),
-                                )
-                            }
-                        }
-                        Greeting("Android")
+                                .size(100.dp)
+                                .graphicsLayer(rotationZ = rotationAngle),
+                        )
                     }
                 }
+                Greeting("Android")
             }
         }
     }
@@ -128,7 +131,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    AtlasKitTheme {
+    CoreTheme {
         Greeting("Android")
     }
 }
