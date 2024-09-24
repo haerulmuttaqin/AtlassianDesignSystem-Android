@@ -20,5 +20,5 @@ jobs:
       - name: Publish documentation
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.ACCESS_TOKEN }}
           publish_dir: ./designsystem/build/html
