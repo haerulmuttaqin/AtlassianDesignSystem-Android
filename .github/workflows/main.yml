@@ -20,6 +20,6 @@ jobs:
       - name: Publish documentation
         uses: peaceiris/actions-gh-pages@v4
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
           FOLDER: build/docs
