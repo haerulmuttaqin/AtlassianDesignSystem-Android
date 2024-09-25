@@ -18,11 +18,11 @@ jobs:
       - name: Build documentation
         run: ./gradlew dokkaHtml
       - name: Goto directory
-        run: designsystem/build/html
+        run: cd designsystem/build/dokka/html
       - name: Listing directory
         run: ls
       - name: Publish documentation
         uses: peaceiris/actions-gh-pages@v4
         with:
           personal_token: ${{ secrets.ACCESS_TOKEN }}
-          publish_dir: designsystem/build/html
+          publish_dir: designsystem/build/dokka/html
