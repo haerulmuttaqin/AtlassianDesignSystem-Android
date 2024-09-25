@@ -22,4 +22,4 @@ jobs:
         with:
           personal_token: ${{ secrets.ACCESS_TOKEN }}
           external_repository: haerulmuttaqin/AtlassianDesignSystem-Android-Docs
-          publish_dir: ../../designsystem/build/dokka/html
+          publish_dir: ../designsystem/build/dokka/html
