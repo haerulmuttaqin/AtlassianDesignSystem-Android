@@ -17,8 +17,6 @@ jobs:
         run: chmod +x ./gradlew
       - name: Build documentation
         run: ./gradlew dokkaHtml
-      - name: Open directory
-        run: cd /designsystem/build/html
       - name: Listing directory
         run: ls
       - name: Publish documentation
