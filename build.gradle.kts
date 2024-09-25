@@ -8,7 +8,7 @@ plugins {
 }
 buildscript {
     dependencies {
-        classpath("org.jetbrains.dokka:dokka-android-gradle-plugin:0.9.17")
+        classpath(dependencyNotation = libs.kotlin.dokka.gradle.android)
     }
 }
 subprojects {

@@ -12,6 +12,7 @@ compose-bom = "2024.09.01"
 appcompat = "1.7.0"
 material = "1.12.0"
 dokka = "1.9.20"
+dokka-android = "0.9.17"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -33,6 +34,7 @@ appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "a
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 kotlin-dokka = { module = "org.jetbrains.dokka:dokka-base", version.ref = "dokka" }
 kotlin-dokka-gradle = { module = "org.jetbrains.dokka:dokka-gradle-plugin", version.ref = "dokka" }
+kotlin-dokka-gradle-android = { module = "org.jetbrains.dokka:dokka-android-gradle-plugin", version.ref = "dokka-android"}
 
 [plugins]
 com-android-application = { id = "com.android.application", version.ref = "agp" }

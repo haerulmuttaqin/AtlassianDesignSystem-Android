@@ -6,10 +6,6 @@ plugins {
 }
 
 android {
-//    dokka {
-//        outputFormat = 'html'
-//        outputDirectory = "$buildDir/javadoc"
-//    }
     namespace = "id.hae.atlassian_designsystem"
     compileSdk = 33
 
