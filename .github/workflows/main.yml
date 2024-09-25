@@ -1,4 +1,4 @@
-name: Docs
+name: docs-generate
 on:
   push:
     branches: [master]
@@ -12,12 +12,13 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v1
         with:
-          java-version: 11
+          java-version: 17
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
       - name: Build documentation
-        run: chmod +x ./gradlew dokkaHtml
+        run: ./gradlew dokkaHtml
       - name: Publish documentation
         uses: peaceiris/actions-gh-pages@v4
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: build/docs
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: designsystem/build/dokka/html
