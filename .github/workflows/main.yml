@@ -17,12 +17,8 @@ jobs:
         run: chmod +x ./gradlew
       - name: Build documentation
         run: ./gradlew dokkaHtml
-      - name: Goto directory
-        run: cd designsystem/build/dokka/html
-      - name: Listing directory
-        run: ls
       - name: Publish documentation
         uses: peaceiris/actions-gh-pages@v4
         with:
-          personal_token: ${{ secrets.ACCESS_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: designsystem/build/dokka/html
