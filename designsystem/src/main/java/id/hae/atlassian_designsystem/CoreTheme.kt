@@ -37,6 +37,8 @@ import id.hae.atlassian_designsystem.foundation.lightColors
 import id.hae.atlassian_designsystem.utils.CirclePath
 import id.hae.atlassian_designsystem.utils.rememberTypography
 
+// this is core teme
+
 @Composable
 fun AtlasKitTheme(
     darkTheme: Boolean,
