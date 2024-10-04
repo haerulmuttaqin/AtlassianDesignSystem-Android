@@ -61,7 +61,7 @@ dependencies {
     implementation(libs.ui.tooling.preview)
     implementation(libs.material3)
 
-    implementation(projects.designsystem)
+//    implementation(projects.designsystem)
     implementation(libs.appcompat)
 
     testImplementation(libs.junit)
@@ -71,6 +71,6 @@ dependencies {
     androidTestImplementation(libs.ui.test.junit4)
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
-    implementation("com.github.haerulmuttaqin:BottomFluxDialog:0.1.1")
+    implementation("com.github.haerulmuttaqin:AtlassianDesignSystem-Android:0.1.5-alpha")
 
 }

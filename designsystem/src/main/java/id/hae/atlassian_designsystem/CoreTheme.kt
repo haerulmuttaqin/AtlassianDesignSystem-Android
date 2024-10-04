@@ -7,6 +7,7 @@ import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
@@ -38,6 +39,13 @@ import id.hae.atlassian_designsystem.utils.CirclePath
 import id.hae.atlassian_designsystem.utils.rememberTypography
 
 // this is core teme
+
+@Composable
+fun AtlasKitTheme2() {
+    Column {
+        // this is column
+    }
+}
 
 @Composable
 fun AtlasKitTheme(
