@@ -19,6 +19,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -35,7 +36,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.core.content.getSystemService
 import id.hae.atlassian_designsystem.AtlasKitTheme
-import id.hae.atlassian_designsystem.CoreTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -117,7 +117,7 @@ class MainActivity : ComponentActivity() {
 
     private val DefaultLightScrim = Color.argb(0xe6, 0xFF, 0xFF, 0xFF)
     private val DefaultDarkScrim = Color.argb(0x80, 0x1b, 0x1b, 0x1b)
-
+    
 }
 
 @Composable
@@ -126,12 +126,4 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         text = "Hello $name!",
         modifier = modifier
     )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    CoreTheme {
-        Greeting("Android")
-    }
 }

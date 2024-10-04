@@ -9,8 +9,6 @@ import androidx.compose.runtime.ProvidableCompositionLocal
 import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color;
-import androidx.compose.ui.platform.LocalContext
-import id.hae.cache.dataStore
 
 /**
  * Surface colors suitable for various backgrounds and surfaces.
