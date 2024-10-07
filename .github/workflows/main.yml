@@ -20,6 +20,6 @@ jobs:
       - name: Publish documentation
         uses: peaceiris/actions-gh-pages@v4
         with:
-          personal_token: ${{ secrets[env.ACCESS_TOKEN] }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           external_repository: haerulmuttaqin/AtlassianDesignSystem-Android-Docs
           publish_dir: designsystem/build/dokka/html
