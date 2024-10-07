@@ -16,7 +16,7 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
       - name: Build documentation
-        run: ./gradlew designsystem:dokkaHtml
+        run: ./gradlew dokkaHtml
       - name: Publish documentation
         uses: peaceiris/actions-gh-pages@v4
         with:
