@@ -143,7 +143,10 @@ $dokka.location:id.hae.atlassian_designsystem.utils//ifNotNullOrEmpty/kotlin.Str
 $dokka.location:id.hae.atlassian_designsystem.utils//ifNull/kotlin.String?#kotlin.Function0[kotlin.String]/PointingToDeclaration/designsystem/id.hae.atlassian_designsystem.utils/if-null.html
 $dokka.location:id.hae.atlassian_designsystem.utils//ifNullOrEmpty/kotlin.String?#kotlin.Function0[kotlin.String]/PointingToDeclaration/designsystem/id.hae.atlassian_designsystem.utils/if-null-or-empty.html
 $dokka.location:id.hae.atlassian_designsystem.utils//ifValueIs/kotlin.String?#kotlin.String#kotlin.Function0[kotlin.String]/PointingToDeclaration/designsystem/id.hae.atlassian_designsystem.utils/if-value-is.html
+$dokka.location:id.hae.atlassian_designsystem.utils//isFalse/kotlin.Boolean#/PointingToDeclaration/designsystem/id.hae.atlassian_designsystem.utils/is-false.html
+$dokka.location:id.hae.atlassian_designsystem.utils//isTrue/kotlin.Boolean?#/PointingToDeclaration/designsystem/id.hae.atlassian_designsystem.utils/is-true.html
 $dokka.location:id.hae.atlassian_designsystem.utils//isValidEmail/kotlin.CharSequence?#/PointingToDeclaration/designsystem/id.hae.atlassian_designsystem.utils/is-valid-email.html
+$dokka.location:id.hae.atlassian_designsystem.utils//orFalse/kotlin.Boolean?#/PointingToDeclaration/designsystem/id.hae.atlassian_designsystem.utils/or-false.html
 $dokka.location:id.hae.atlassian_designsystem.utils//orSelectNone/kotlin.String?#/PointingToDeclaration/designsystem/id.hae.atlassian_designsystem.utils/or-select-none.html
 $dokka.location:id.hae.atlassian_designsystem.utils//rememberTypography/#android.content.Context/PointingToDeclaration/designsystem/id.hae.atlassian_designsystem.utils/remember-typography.html
 $dokka.location:id.hae.atlassian_designsystem.utils//toHtmlFormat/kotlin.String#/PointingToDeclaration/designsystem/id.hae.atlassian_designsystem.utils/to-html-format.html
@@ -154,6 +157,7 @@ $dokka.location:id.hae.atlassian_designsystem.utils/CirclePath/CirclePath/#kotli
 $dokka.location:id.hae.atlassian_designsystem.utils/CirclePath/createOutline/#androidx.compose.ui.geometry.Size#androidx.compose.ui.unit.LayoutDirection#androidx.compose.ui.unit.Density/PointingToDeclaration/designsystem/id.hae.atlassian_designsystem.utils/-circle-path/create-outline.html
 $dokka.location:id.hae.atlassian_designsystem////PointingToDeclaration/designsystem/id.hae.atlassian_designsystem/index.html
 $dokka.location:id.hae.atlassian_designsystem//AtlasKitTheme/#kotlin.Boolean#kotlin.Function1[kotlin.Boolean,kotlin.Unit]#kotlin.Function1[kotlin.Function1[androidx.compose.ui.geometry.Offset,kotlin.Unit],kotlin.Unit]/PointingToDeclaration/designsystem/id.hae.atlassian_designsystem/-atlas-kit-theme.html
+$dokka.location:id.hae.atlassian_designsystem//AtlasKitTheme2/#/PointingToDeclaration/designsystem/id.hae.atlassian_designsystem/-atlas-kit-theme2.html
 $dokka.location:id.hae.atlassian_designsystem//CoreTheme/#id.hae.atlassian_designsystem.foundation.Colors#id.hae.atlassian_designsystem.foundation.Typography#id.hae.atlassian_designsystem.foundation.Shapes#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/designsystem/id.hae.atlassian_designsystem/-core-theme.html
 $dokka.location:id.hae.atlassian_designsystem/AtlasKitTheme///PointingToDeclaration/designsystem/id.hae.atlassian_designsystem/-atlas-kit-theme/index.html
 $dokka.location:id.hae.atlassian_designsystem/AtlasKitTheme/colors/#/PointingToDeclaration/designsystem/id.hae.atlassian_designsystem/-atlas-kit-theme/colors.html
